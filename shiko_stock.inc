@@ -245,6 +245,8 @@ public Action RemoveParticle(Handle timer, any particle)
 			AcceptEntityInput(particle, "Kill");
 		}
 	}
+
+	return Plugin_Continue;
 }
 
 stock void Explode(float flPos[3], float flDamage, float flRadius, int iAttacker = 0, bool bFriendlyFire = false, const char[] strParticle, const char[] strSound)
